@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="shopping-cart-holder">
+  <div class="burger-menu-box">
+    <div class="burger-menu" (click)="openShoppingCart()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="shopping-cart" #shoppingCart [ngClass]="{'open': isShoppingCartOpen}">
+    <div class="product-item" *ngFor="let cartItem of itemsForView">
+      <div class="product-name">{{cartItem.product.name}}</div>
+    </div>
+  </div>
+</div>

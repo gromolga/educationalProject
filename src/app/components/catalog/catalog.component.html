@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<app-shopping-cart></app-shopping-cart>
+
+<div class="products-list-layer">
+  <div class="product-list">
+    <div class="product-item" *ngFor="let product of products">
+      <app-product [product]="product"></app-product>
+    </div>
+  </div>
+</div>
+
+<div class="svg-box"></div>
+
+
